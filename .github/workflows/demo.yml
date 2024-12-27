@@ -50,6 +50,6 @@ jobs:
       - name: Output Filename
         run: echo "${{ needs.Build.outputs.script-output }}"
       - name: deploy
-        run: echo "Deploying"
+        run: echo "Deploying..."
 
 
