@@ -37,6 +37,12 @@ jobs:
     needs: Build
     runs-on: windows-latest
     steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-files
+      - name: List downloaded files
+        run: ls        
       - name: deploy
         run: echo "Deploying"
 
