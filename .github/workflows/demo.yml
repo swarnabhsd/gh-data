@@ -1,7 +1,9 @@
 name: Deploy Project
 on:
   push:
-    
+    branches:
+      - master
+
 jobs:
   Test:
     runs-on: windows-latest
